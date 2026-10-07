@@ -7,6 +7,13 @@ import '@fortawesome/fontawesome-free/js/all.min';
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+
+document.querySelectorAll('.add-to-cart-btn').forEach(item =>{
+    item.addEventListener('click', () =>{
+        alert('أُضيف المنتج إلى عربة الشراء')
+    })
+}) 
+
 console.log("أهلًا بك في متجر عربي");
 
 console.log("أهلًا بكم في أكاديمية حسوب");
